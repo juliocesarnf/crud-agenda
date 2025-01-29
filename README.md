@@ -30,9 +30,35 @@ Este projeto é um sistema simples de gerenciamento de contatos, onde é possív
 
 ## Estrutura do Projeto
 
-A estrutura do projeto é a seguinte:
-
-Agenda /classes # Contém a classe Contact.php Contact.php /connection # Arquivos relacionados à conexão com o banco de dados connection.php # Conexão com o banco de dados contacts.sql # Script SQL para criar o banco de dados e as tabelas /public # Arquivos acessíveis publicamente /scripts # Scripts JavaScript registration.js # Script de registro de contatos script.js # Script principal para funcionalidades gerais /style # Arquivos de estilo CSS style.css # Estilos principais style-registration.css # Estilos para a página de registro /actions # Arquivos PHP responsáveis pelas ações registration.php # Ação de registro de contato removal.php # Ação de remoção de contato alteration.php # Ação de alteração de contato form-alteration.php # Formulário para alteração de contato form-registration.php # Formulário para registro de novo contato index.php # Página principal do sistema /repository # Contém arquivos responsáveis pela manipulação de dados ContactRepository.php # Repositório para manipulação dos contatos ContactRepositoryRelationalDatabase.php # Repositório para manipulação com banco de dados relacional
+Agenda
+├── 📂 classes
+│   ├── 📄 Contact.php → Classe que representa o modelo de dados para contatos.
+│
+├── 📂 connection
+│   ├── 📄 connection.php → Arquivo de configuração e conexão com o banco de dados.
+│   ├── 📄 contacts.sql → Script SQL para criação e da tabela de contatos.
+│
+├── 📂 public
+│   ├── 📂 scripts
+│   │   ├── 📄 validation.js → Script validação de um telefone.
+│   │   ├── 📄 script.js → Script geral para interações na aplicação.
+│   │
+│   ├── 📂 style
+│   │   ├── 📄 style.css → Estilos principais do site.
+│   │   ├── 📄 style-registration.css → Estilos específicos para o formulário de registro e alteração.
+│   │
+│   ├── 📂 actions
+│   │   ├── 📄 registration.php → Lógica para registrar novos contatos.
+│   │   ├── 📄 removal.php → Lógica para remover contatos.
+│   │   ├── 📄 alteration.php → Lógica para alterar dados de contatos.
+│   │
+│   ├── 📄 form-alteration.php → Formulário para alterar informações de contatos.
+│   ├── 📄 form-registration.php → Formulário para registro de novos contatos.
+│   ├── 📄 index.php → Página inicial do projeto.
+│
+├── 📂 repository
+│   ├── 📄 ContactRepository.php → Interface para manipulação de contatos no repositório.
+│   ├── 📄 ContactRepositoryRelationalDatabase.php → Implementação da interface para banco de dados relacional.
 
 ## Banco de Dados
 
