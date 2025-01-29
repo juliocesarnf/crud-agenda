@@ -30,22 +30,23 @@ Este projeto é um sistema simples de gerenciamento de contatos, onde é possív
 
 ## Estrutura do Projeto
 
+```md
 Agenda
 ├── 📂 classes
 │   ├── 📄 Contact.php → Classe que representa o modelo de dados para contatos.
 │
 ├── 📂 connection
 │   ├── 📄 connection.php → Arquivo de configuração e conexão com o banco de dados.
-│   ├── 📄 contacts.sql → Script SQL para criação e da tabela de contatos.
+│   ├── 📄 contacts.sql → Script SQL para criação e manipulação da tabela de contatos.
 │
 ├── 📂 public
 │   ├── 📂 scripts
-│   │   ├── 📄 validation.js → Script validação de um telefone.
+│   │   ├── 📄 registration.js → Script para manipulação do formulário de registro.
 │   │   ├── 📄 script.js → Script geral para interações na aplicação.
 │   │
 │   ├── 📂 style
 │   │   ├── 📄 style.css → Estilos principais do site.
-│   │   ├── 📄 style-registration.css → Estilos específicos para o formulário de registro e alteração.
+│   │   ├── 📄 style-registration.css → Estilos específicos para o formulário de registro.
 │   │
 │   ├── 📂 actions
 │   │   ├── 📄 registration.php → Lógica para registrar novos contatos.
@@ -59,7 +60,7 @@ Agenda
 ├── 📂 repository
 │   ├── 📄 ContactRepository.php → Interface para manipulação de contatos no repositório.
 │   ├── 📄 ContactRepositoryRelationalDatabase.php → Implementação da interface para banco de dados relacional.
-
+```
 ## Banco de Dados
 
 O projeto utiliza um banco de dados MySQL para armazenar os contatos. O código para criar o banco de dados e a tabela necessária está disponível no arquivo `contacts.sql` na pasta connection. Para utilizá-lo, execute o comando. Nos comentários tem alguns contatos aleatorios para testes. No arquivo `connection.php` você é possível alterar a o usurario e senha do banco que por padrão são `root` e `` respectivamente.
