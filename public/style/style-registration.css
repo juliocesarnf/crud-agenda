@@ -1,0 +1,85 @@
+/* Reset de estilos para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#form {
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+}
+
+#form-title {
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #0077cc;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #005fa3;
+    border-radius: 5px;
+    font-size: 1em;
+    outline: none;
+}
+
+input:focus {
+    border-color: #0077cc;
+    box-shadow: 0 0 5px rgba(0, 119, 204, 0.5);
+}
+
+#form-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+#form-buttons-cancel,
+#form-buttons-add {
+    flex: 1;
+    padding: 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#form-buttons-cancel {
+    background: #dc3545;
+    color: #fff;
+}
+
+#form-buttons-cancel:hover {
+    background: #c82333;
+}
+
+#form-buttons-add {
+    background: #28a745;
+    color: #fff;
+}
+
+#form-buttons-add:hover {
+    background: #218838;
+}

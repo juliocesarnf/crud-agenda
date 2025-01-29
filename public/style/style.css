@@ -1,0 +1,130 @@
+/* Reset de estilos para garantir consistência */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Estilo do cabeçalho */
+#header {
+    background: #0077cc;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#header-title {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+#title-search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#title-search-label {
+    font-weight: bold;
+}
+
+#title-search-input {
+    padding: 8px;
+    border: 2px solid #005fa3;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 250px;
+}
+
+#header-add {
+    background: #28a745;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    border-radius: 20%;
+    cursor: pointer;
+    transition: background 0.3s;
+    text-decoration: none;
+    color: inherit;
+}
+
+#header-add:hover {
+    background: #218838;
+}
+
+/* Estilo da tabela */
+#table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#table-head {
+    background: #0077cc;
+    color: #fff;
+    text-align: left;
+}
+
+.table-head-line-cell, .table-body-line-cell {
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-body-line:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.table-body-line:hover {
+    background: #f1f1f1;
+}
+
+.lastCell{
+    display: flex;
+    align-items: center;
+}
+
+.table-body-line-cell-email {
+    color: #555;
+    font-style: italic;
+}
+
+.table-body-line-cell-icons {
+    display: flex;
+    gap: 10px;
+    font-size: 1.2em;
+    margin-left: auto;
+}
+
+.table-body-line-cell-icons i {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.table-body-line-cell-icons-alter:hover {
+    color: #ffc107;
+    transform: scale(1.1);
+}
+
+.table-body-line-cell-icons-remove:hover {
+    color: #dc3545;
+    transform: scale(1.1);
+}
+
+
